@@ -1,13 +1,11 @@
 
-# Practice JWT
-
 <br/>
 
 ## 백엔드 - NestJS
 
 ### 구조 설계
 
-<img width="1200" alt="image" src="https://github.com/user-attachments/assets/e89a5090-0c1e-4124-9e4b-a67263eaa637">
+<img width="1237" alt="image" src="https://github.com/user-attachments/assets/cef977fb-14e6-49fd-9194-855dc402b533">
 
 
 ### 시퀀스 다이어그램
