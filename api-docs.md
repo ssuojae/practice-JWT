@@ -1,6 +1,5 @@
-# JWT RESTful API 엔드포인트
+## API docs
 
-<br/>
 
 ## 1. 회원가입 (Register)
 
