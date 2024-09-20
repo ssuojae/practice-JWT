@@ -47,3 +47,4 @@
 - [JWT 인코딩과 디코딩 원리](https://github.com/ssuojae/practice-jwt/blob/main/study3.md)
 - [Access Token vs Refresh Token](https://github.com/ssuojae/practice-jwt/blob/main/study4.md)
 - [왜 Redis는 빠를까?](https://github.com/ssuojae/practice-jwt/blob/main/%08study5.md)
+- [비밀번호 암호화 비교 및 bcrypt 도입 이유](https://github.com/ssuojae/practice-jwt/blob/main/study6.md)
