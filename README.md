@@ -43,7 +43,7 @@
 
 - **HTTP 메서드**: `POST`
 - **엔드포인트**: `/auth/login`
-- **설명**: 사용자가 이메일과 비밀번호로 로그인합니다. **Basic 인증** 방식으로 `Base64` 인코딩된 이메일과 비밀번호를 전송
+- **설명**: 사용자는 이메일과 비밀번호로 로그인. **Basic 인증** 방식으로 `Base64` 인코딩된 이메일과 비밀번호를 전송
 - **Request Header**:
     ```text
     Authorization: Basic {base64_encoded(email:password)}
