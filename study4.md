@@ -38,6 +38,11 @@
 
 ### 4. **Access 토큰과 Refresh 토큰의 사용 흐름**
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b98a17dd-3718-4aee-aed3-332820f4375e">
+
+<br/>
+<br/>
+
 1. 사용자가 로그인하면, 서버는 Access 토큰과 Refresh 토큰을 클라이언트에 발급한다.
 2. 클라이언트는 Access 토큰을 사용해서 API 요청을 보낸다.
 3. Access 토큰이 만료되면, 클라이언트는 Refresh 토큰을 서버에 보내서 새로운 Access 토큰을 발급받는다.
