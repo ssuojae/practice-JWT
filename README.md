@@ -3,6 +3,24 @@
 
 <br/>
 
+### 백엔드 - Nest.js
+
+#### 구조 설계
+
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/e89a5090-0c1e-4124-9e4b-a67263eaa637">
+
+
+#### 시퀀스 다이어그램
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/3660ec1f-9b4f-4f25-a341-44f3c4128731">
+
+<br/>
+<br/>
+
+### 프론트 - Flutter
+
+### 프론트 - iOS
+
 
 
 <br/>
