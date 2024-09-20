@@ -3,6 +3,11 @@
 
 <br/>
 
+![image](https://github.com/user-attachments/assets/1e57e9ce-9d8c-48ce-bca3-763c2c076b4d)
+[https://blog.bytebytego.com/p/why-is-redis-so-fast](https://blog.bytebytego.com/p/why-is-redis-so-fast)
+
+<br/>
+
 ### 1. **메모리 기반 저장소**
 Redis는 데이터를 **RAM(메모리)** 에 저장하기 때문에, **디스크**에 데이터를 저장하는 다른 데이터베이스보다 훨씬 빠르다. 디스크 기반 시스템에서는 데이터 읽기/쓰기에 걸리는 시간이 병목이 되지만, Redis는 이 병목 현상을 피할 수 있다.
 
