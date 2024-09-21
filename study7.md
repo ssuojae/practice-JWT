@@ -27,3 +27,35 @@ NestJS 기반의 백엔드 프로젝트에서 **PostgreSQL**, **Redis**, **bcryp
 
   -> **빠른 초기화**  <br/>
    테스트 중 데이터베이스나 캐시를 초기화하는 경우가 자주 발생하는데, 도커 컨테이너는 독립적인 환경을 제공하므로, 쉽게 초기화 후 테스트를 다시 실행할 수 있다. 이를 통해 매번 새로운 상태에서 **테스트를 빠르게** 진행할 수 있다.<br/>
+
+#### 4. PostgreSQL과 Redis 설정
+
+```yaml
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app  # 프로젝트 소스를 컨테이너로 마운트
+      - /usr/src/app/node_modules  # node_modules는 도커 내부에서만 관리
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}  # 환경 변수를 통해 유저명 설정
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  # 환경 변수를 통해 비밀번호 설정
+      POSTGRES_DB: ${POSTGRES_DB}  # 환경 변수를 통해 DB 이름 설정
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data  # 루트 디렉토리에 데이터 저장
+
+  redis:
+    image: redis:alpine
+    volumes:
+      - ./redis_data:/data  # 루트 디렉토리에 데이터 저장
+
+   ...
+```
+
+- Docker Compose를 통해 PostgreSQL과 Redis 컨테이너를 설정하고, 데이터 저장을 위한 볼륨을 루트 디렉토리에 설정했다.
+- 각각의 서비스가 독립적으로 실행되며, 설정된 환경 변수를 사용하여 서버가 쉽게 재실행 가능하도록 했다.
+- node_modules는 도커 내부에서만 관리하여 로컬과의 충돌을 방지했다.
+
