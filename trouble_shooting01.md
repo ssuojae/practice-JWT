@@ -12,7 +12,7 @@
 
 ## 문제 해결
 
-- 문제의 원인은 database.config.ts 파일에서 PostgreSQL 호스트가 잘못 설정되어, **localhost(127.0.0.1)**로 되어 있었다.
+- 문제의 원인은 database.config.ts 파일에서 PostgreSQL 호스트가 잘못 설정되어, **localhost(127.0.0.1)** 로 되어 있었다.
 - 도커 환경에서는 **localhost(127.0.0.1)** 를 사용할 수 없기 때문에, PostgreSQL 컨테이너에 접근할 수 없었다. 즉 도커 내에서 각 서비스는 컨테이너 이름을 통해 접근해야 한다.
 
 ```typescript
