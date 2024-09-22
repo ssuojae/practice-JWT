@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { RedisService } from './redis.service';
 import { typeOrmConfig } from './config/database.config';
+import { RedisService } from 'nestjs-redis';
 
 @Module({
   imports: [
