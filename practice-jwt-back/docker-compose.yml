@@ -1,9 +1,9 @@
-version: '3.8'
-
 services:
   app:
     build: .
     container_name: nestjs_app
+    env_file:
+      - .env  # .env 파일을 명시적으로 참조
     volumes:
       - .:/usr/src/app  # 프로젝트 소스를 컨테이너로 마운트
       - /usr/src/app/node_modules  # node_modules는 도커 내부에서만 관리
