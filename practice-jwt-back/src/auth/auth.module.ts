@@ -17,9 +17,6 @@ import { typeOrmConfig } from '../config/database.config';
   imports: [
     TypeOrmModule.forRoot(typeOrmConfig),
     TypeOrmModule.forFeature([UserEntity]),
-    ConfigModule.forRoot({
-      isGlobal: true,
-    }),
   ],
   controllers: [AuthController],
   providers: [
