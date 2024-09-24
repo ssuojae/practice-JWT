@@ -1,6 +1,7 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, UseGuards, Request } from '@nestjs/common';
 import { IAuthService } from './interfaces/auth.service.interface';
 import { UserDTO } from '../user/user.dto';
+import { JwtAuthGuard } from './jwt-auth.guard'; 
 
 @Controller('auth')
 export class AuthController {
@@ -19,5 +20,12 @@ export class AuthController {
   @Post('token/refresh')
   async refreshTokens(@Body('refreshToken') refreshToken: string) {
     return await this.authService.refreshAccessToken(refreshToken);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('protected/resource')
+  getProtectedResource(@Request() req: any) {
+    const user = req.user;
+    return { data: `This is a protected resource for ${user.email}` };
   }
 }
