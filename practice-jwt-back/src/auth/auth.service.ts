@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import {Inject, Injectable} from '@nestjs/common';
 import { IUserRepository } from '../user/interfaces/user.repository.interface';
 import { IJwtService } from './interfaces/jwt.service.interface';
 import { IRedisService } from './interfaces/redis.service.interface';
@@ -10,9 +10,12 @@ import { Bcrypt } from './bcrypt';
 @Injectable()
 export class AuthService implements IAuthService {
   constructor(
-    private readonly userRepository: IUserRepository,
-    private readonly jwtService: IJwtService,
-    private readonly redisService: IRedisService,
+      @Inject('IUserRepository')
+      private readonly userRepository: IUserRepository,
+      @Inject('IJwtService')
+      private readonly jwtService: IJwtService,
+      @Inject('IRedisService')
+      private readonly redisService: IRedisService,
   ) {}
 
   async createUser(

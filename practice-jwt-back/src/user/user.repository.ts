@@ -1,25 +1,23 @@
-import { Injectable } from '@nestjs/common';
-import { Repository } from 'typeorm';
-import { InjectRepository } from '@nestjs/typeorm';
+import {Inject, Injectable} from '@nestjs/common';
 import { UserEntity } from './user.entity';
 import { IUserRepository } from './interfaces/user.repository.interface';
 
 @Injectable()
 export class UserRepository implements IUserRepository {
-  constructor(
-    @InjectRepository(UserEntity)
-    private readonly userRepo: Repository<UserEntity>,
-  ) {}
+    constructor(
+        @Inject('IUserRepository')
+        private readonly userRepository: IUserRepository,
+    ) {}
 
-  async findUserByEmail(email: string): Promise<UserEntity> {
-    return this.userRepo.findOne({ where: { email } });
-  }
+    async findUserByEmail(email: string): Promise<UserEntity> {
+        return this.userRepository.findUserByEmail(email);
+    }
 
-  async saveUser(user: UserEntity): Promise<UserEntity> {
-    return this.userRepo.save(user);
-  }
+    async saveUser(user: UserEntity): Promise<UserEntity> {
+        return this.userRepository.saveUser(user);
+    }
 
-  async findById(id: string): Promise<UserEntity | null> { // findById 구현
-    return this.userRepo.findOne({ where: { id } });
-  }
+    async findById(id: string): Promise<UserEntity | null> {
+        return this.userRepository.findById(id);
+    }
 }
