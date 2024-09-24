@@ -42,6 +42,8 @@
 
 ## 공부기록
 
+### 백엔드
+
 - [JWT 구현에서 Redis와 PostgreSQL을 사용한 이유](https://github.com/ssuojae/practice-JWT/blob/main/study/study2.md)
 - [인증과 인가, JWT와 Session의 차이](https://github.com/ssuojae/practice-JWT/blob/main/study/study1.md)
 - [JWT 인코딩과 디코딩 원리](https://github.com/ssuojae/practice-jwt/blob/main/study/study3.md)
@@ -52,3 +54,11 @@
 - [도커의 ip주소는 왜 127.0.0.1 이 아닐까?](https://github.com/ssuojae/practice-jwt/blob/main/study/trouble_shooting01.md)
 - [TypeOrmModule의 `forRoot()`와 `forFeature()`](https://github.com/ssuojae/practice-JWT/blob/main/study/study8.md)
 - [`@InjectRepository` 대신 `@Inject`를 사용한 이유](https://github.com/ssuojae/practice-JWT/blob/main/study/study9.md)
+- [JWT 기반 자동 로그인 구현 (Private Route 설정)](https://github.com/ssuojae/practice-JWT/blob/main/study/study10.md)
+
+
+<br/>
+
+### 프론트엔드
+
+- []()
