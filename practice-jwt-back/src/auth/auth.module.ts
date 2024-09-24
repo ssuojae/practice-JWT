@@ -10,8 +10,10 @@ import { IAuthService } from './interfaces/auth.service.interface';
 import { IUserRepository } from '../user/interfaces/user.repository.interface';
 import { IJwtService } from './interfaces/jwt.service.interface';
 import { IRedisService } from './interfaces/redis.service.interface';
+import { JwtStrategy } from './jwt.strategy';
+import { IJwtStrategy } from './interfaces/jwt.strategy.interface';
 import { typeOrmConfig } from '../config/database.config';
-import { redisConfig } from '../config/redis.config'; // Redis 설정
+import { redisConfig } from '../config/redis.config';
 
 @Module({
     imports: [
@@ -33,6 +35,10 @@ import { redisConfig } from '../config/redis.config'; // Redis 설정
             useClass: JwtService,
         },
         {
+            provide: IJwtStrategy,
+            useClass: JwtStrategy,
+        },
+        {
             provide: IRedisService,
             useClass: RedisService,
         },
@@ -43,16 +49,6 @@ import { redisConfig } from '../config/redis.config'; // Redis 설정
         {
             provide: 'REDIS_OPTIONS',
             useValue: redisConfig,
-        },
-    ],
-    exports: [
-        {
-            provide: IJwtService,
-            useClass: JwtService,
-        },
-        {
-            provide: IRedisService,
-            useClass: RedisService,
         },
     ],
 })
