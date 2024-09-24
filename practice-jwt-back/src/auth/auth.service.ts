@@ -10,11 +10,8 @@ import { Bcrypt } from './bcrypt';
 @Injectable()
 export class AuthService implements IAuthService {
   constructor(
-      @Inject('IUserRepository')
       private readonly userRepository: IUserRepository,
-      @Inject('IJwtService')
       private readonly jwtService: IJwtService,
-      @Inject('IRedisService')
       private readonly redisService: IRedisService,
   ) {}
 
