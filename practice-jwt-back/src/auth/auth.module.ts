@@ -14,6 +14,8 @@ import { JwtStrategy } from './jwt.strategy';
 import { IJwtStrategy } from './interfaces/jwt.strategy.interface';
 import { typeOrmConfig } from '../config/database.config';
 import { redisConfig } from '../config/redis.config';
+import {BcryptService} from "./bcrypt.service";
+import {IbcryptService} from "./interfaces/bcrypt.service.interface";
 
 @Module({
     imports: [
@@ -41,6 +43,10 @@ import { redisConfig } from '../config/redis.config';
         {
             provide: IRedisService,
             useClass: RedisService,
+        },
+        {
+            provide: IbcryptService,
+            useClass: BcryptService,
         },
         {
             provide: 'JWT_SECRET',
