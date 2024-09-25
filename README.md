@@ -5,12 +5,21 @@
 
 ### 구조 설계
 
-<img width="1237" alt="image" src="https://github.com/user-attachments/assets/cef977fb-14e6-49fd-9194-855dc402b533">
+<img width="1239" alt="image" src="https://github.com/user-attachments/assets/be6c2416-52de-448d-b7e9-353641f15345">
 
 
 ### 시퀀스 다이어그램
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/3660ec1f-9b4f-4f25-a341-44f3c4128731">
+#### 회원가입 플로우
+
+<img width="919" alt="image" src="https://github.com/user-attachments/assets/d54ed0f1-e62f-4392-9f49-ff2e67c936f6">
+
+<br/>
+
+#### 자동 로그인 플로우
+
+<img width="730" alt="image" src="https://github.com/user-attachments/assets/30f250c0-33b8-4275-93f5-607cda7c9199">
+
 
 <br/>
 <br/>
