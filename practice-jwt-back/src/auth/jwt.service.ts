@@ -15,13 +15,4 @@ export class JwtService implements IJwtService {
 
         return {accessToken, refreshToken};
     }
-
-    verifyToken(token: string) {
-        try {
-            return jwt.verify(token, this.jwtSecret);
-        } catch (error) {
-            console.error('Token verification error:', error);
-            return null;
-        }
-    }
 }

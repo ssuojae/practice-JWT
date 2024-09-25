@@ -14,7 +14,7 @@ export class RedisService implements IRedisService {
   }
 
   async storeRefreshToken(userId: string, token: string): Promise<void> {
-    await this.redisClient.set(token, userId);
+    await this.redisClient.set(userId, token);
   }
 
   async getRefreshToken(userId: string): Promise<string> {

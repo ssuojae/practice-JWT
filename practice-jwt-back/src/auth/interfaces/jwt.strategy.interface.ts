@@ -1,3 +1,5 @@
+import {UserEntity} from "../../user/user.entity";
+
 export abstract class IJwtStrategy {
-    abstract validateToken(token: string): Promise<{ id: string; email: string }>;
+    abstract validate(payload: { id: string }): Promise<UserEntity>;
 }
