@@ -11,8 +11,12 @@
 ### 시퀀스 다이어그램
 
 #### 회원가입 플로우
+<img width="930" alt="image" src="https://github.com/user-attachments/assets/91beb1f1-186f-4cf1-8b4b-d73557e8748c">
 
-<img width="919" alt="image" src="https://github.com/user-attachments/assets/d54ed0f1-e62f-4392-9f49-ff2e67c936f6">
+<br/>
+
+#### 로그인 플로우
+<img width="930" alt="image" src="https://github.com/user-attachments/assets/d54ed0f1-e62f-4392-9f49-ff2e67c936f6">
 
 <br/>
 

@@ -14,6 +14,9 @@
 - Base64 인코딩은 데이터를 **암호화하지 않으며**, 누구나 디코딩할 수 있다.
 
 ### 3. **JWT의 구성**
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f53a25c8-65df-4340-86d1-e154d696985b">
+
 - JWT는 아래와 같은 구조로 구성된다:
   ```
   <헤더>.<페이로드>.<서명>
