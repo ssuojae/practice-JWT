@@ -1,25 +1,31 @@
-import {Inject, Injectable, UnauthorizedException, ConflictException, NotFoundException, InternalServerErrorException} from '@nestjs/common';
+import {
+  Inject,
+  Injectable,
+  UnauthorizedException,
+  ConflictException,
+  NotFoundException,
+  InternalServerErrorException,
+} from '@nestjs/common';
 import { IUserRepository } from '../user/interfaces/user.repository.interface';
 import { IJwtService } from './interfaces/jwt.service.interface';
 import { IRedisService } from './interfaces/redis.service.interface';
 import { UserDTO } from '../user/user.dto';
 import { UserEntity } from '../user/user.entity';
 import { IAuthService } from './interfaces/auth.service.interface';
-import {BcryptService} from "./bcrypt.service";
-import {IbcryptService} from "./interfaces/bcrypt.service.interface";
-
+import { BcryptService } from './bcrypt.service';
+import { IbcryptService } from './interfaces/bcrypt.service.interface';
 
 @Injectable()
 export class AuthService implements IAuthService {
   constructor(
-      @Inject(IUserRepository) private readonly userRepository: IUserRepository,
-      @Inject(IJwtService) private readonly jwtService: IJwtService,
-      @Inject(IRedisService) private readonly redisService: IRedisService,
-      @Inject(IbcryptService) private readonly bcryptService: BcryptService,
+    @Inject(IUserRepository) private readonly userRepository: IUserRepository,
+    @Inject(IJwtService) private readonly jwtService: IJwtService,
+    @Inject(IRedisService) private readonly redisService: IRedisService,
+    @Inject(IbcryptService) private readonly bcryptService: BcryptService,
   ) {}
 
   async createUser(
-      userDto: UserDTO,
+    userDto: UserDTO,
   ): Promise<{ accessToken: string; refreshToken: string }> {
     try {
       const user = await this.userRepository.findUserByEmail(userDto.email);
@@ -35,7 +41,10 @@ export class AuthService implements IAuthService {
       const savedUser = await this.userRepository.saveUser(newUser);
 
       const token = this.jwtService.signToken(savedUser);
-      await this.redisService.storeRefreshToken(savedUser.id, token.refreshToken);
+      await this.redisService.storeRefreshToken(
+        savedUser.id,
+        token.refreshToken,
+      );
       return token;
     } catch (error) {
       throw new InternalServerErrorException('Could not create user');
@@ -43,7 +52,7 @@ export class AuthService implements IAuthService {
   }
 
   async validateUser(
-      userDto: UserDTO,
+    userDto: UserDTO,
   ): Promise<{ accessToken: string; refreshToken: string }> {
     try {
       const user = await this.userRepository.findUserByEmail(userDto.email);
@@ -52,8 +61,8 @@ export class AuthService implements IAuthService {
       }
 
       const isPasswordValid = await this.bcryptService.compare(
-          userDto.password,
-          user.password,
+        userDto.password,
+        user.password,
       );
       if (!isPasswordValid) {
         throw new UnauthorizedException('Invalid credentials');
@@ -68,7 +77,7 @@ export class AuthService implements IAuthService {
   }
 
   async refreshAccessToken(
-      refreshToken: string,
+    refreshToken: string,
   ): Promise<{ accessToken: string }> {
     try {
       console.log('Received refreshToken:', refreshToken);
