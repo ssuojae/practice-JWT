@@ -14,48 +14,48 @@ import { JwtStrategy } from './jwt.strategy';
 import { IJwtStrategy } from './interfaces/jwt.strategy.interface';
 import { typeOrmConfig } from '../config/database.config';
 import { redisConfig } from '../config/redis.config';
-import {BcryptService} from "./bcrypt.service";
-import {IbcryptService} from "./interfaces/bcrypt.service.interface";
+import { BcryptService } from './bcrypt.service';
+import { IbcryptService } from './interfaces/bcrypt.service.interface';
 
 @Module({
-    imports: [
-        TypeOrmModule.forRoot(typeOrmConfig),
-        TypeOrmModule.forFeature([UserEntity]),
-    ],
-    controllers: [AuthController],
-    providers: [
-        {
-            provide: IAuthService,
-            useClass: AuthService,
-        },
-        {
-            provide: IUserRepository,
-            useClass: UserRepository,
-        },
-        {
-            provide: IJwtService,
-            useClass: JwtService,
-        },
-        {
-            provide: IJwtStrategy,
-            useClass: JwtStrategy,
-        },
-        {
-            provide: IRedisService,
-            useClass: RedisService,
-        },
-        {
-            provide: IbcryptService,
-            useClass: BcryptService,
-        },
-        {
-            provide: 'JWT_SECRET',
-            useValue: process.env.JWT_SECRET,
-        },
-        {
-            provide: 'REDIS_OPTIONS',
-            useValue: redisConfig,
-        },
-    ],
+  imports: [
+    TypeOrmModule.forRoot(typeOrmConfig),
+    TypeOrmModule.forFeature([UserEntity]),
+  ],
+  controllers: [AuthController],
+  providers: [
+    {
+      provide: IAuthService,
+      useClass: AuthService,
+    },
+    {
+      provide: IUserRepository,
+      useClass: UserRepository,
+    },
+    {
+      provide: IJwtService,
+      useClass: JwtService,
+    },
+    {
+      provide: IJwtStrategy,
+      useClass: JwtStrategy,
+    },
+    {
+      provide: IRedisService,
+      useClass: RedisService,
+    },
+    {
+      provide: IbcryptService,
+      useClass: BcryptService,
+    },
+    {
+      provide: 'JWT_SECRET',
+      useValue: process.env.JWT_SECRET,
+    },
+    {
+      provide: 'REDIS_OPTIONS',
+      useValue: redisConfig,
+    },
+  ],
 })
 export class AuthModule {}
