@@ -68,6 +68,7 @@
 - [TypeOrmModule의 `forRoot()`와 `forFeature()`](https://github.com/ssuojae/practice-JWT/blob/main/study/study8.md)
 - [`@InjectRepository` 대신 `@Inject`를 사용한 이유](https://github.com/ssuojae/practice-JWT/blob/main/study/study9.md)
 - [JWT 기반 자동 로그인 구현 (Private Route 설정)](https://github.com/ssuojae/practice-JWT/blob/main/study/study10.md)
+- [DTO에서 PickType과 데코레이터 적용](https://github.com/ssuojae/practice-JWT/blob/main/study/study11.md)
 
 
 <br/>
