@@ -30,7 +30,7 @@
 
 ### RESTful API 엔드포인트 설계
 
-#### [API 문서로 이동하기](https://github.com/ssuojae/practice-jwt/blob/main/api-docs.md)
+#### [API 문서로 이동하기](https://app.swaggerhub.com/apis/SUOJAE3/jwt/1.0.0)
 
 <br/>
 <br/>
