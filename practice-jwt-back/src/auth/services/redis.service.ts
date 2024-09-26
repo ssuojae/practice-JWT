@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { Redis } from 'ioredis';
-import { IRedisService } from './interfaces/redis.service.interface';
+import { IRedisService } from '../interfaces/redis.service.interface';
 import { RedisOptions } from 'ioredis';
 
 @Injectable()
@@ -8,7 +8,7 @@ export class RedisService implements IRedisService {
   private redisClient: Redis;
 
   constructor(
-      @Inject('REDIS_OPTIONS') private readonly redisOptions: RedisOptions,
+    @Inject('REDIS_OPTIONS') private readonly redisOptions: RedisOptions,
   ) {
     this.redisClient = new Redis(redisOptions);
   }

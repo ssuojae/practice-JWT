@@ -6,14 +6,14 @@ import {
   NotFoundException,
   InternalServerErrorException,
 } from '@nestjs/common';
-import { IUserRepository } from '../user/interfaces/user.repository.interface';
-import { IJwtService } from './interfaces/jwt.service.interface';
-import { IRedisService } from './interfaces/redis.service.interface';
-import { UserDTO } from '../user/user.dto';
-import { UserEntity } from '../user/user.entity';
-import { IAuthService } from './interfaces/auth.service.interface';
+import { IUserRepository } from '../../user/interfaces/user.repository.interface';
+import { IJwtService } from '../interfaces/jwt.service.interface';
+import { IRedisService } from '../interfaces/redis.service.interface';
+import { UserDTO } from '../../user/user.dto';
+import { UserEntity } from '../../user/user.entity';
+import { IAuthService } from '../interfaces/auth.service.interface';
 import { BcryptService } from './bcrypt.service';
-import { IbcryptService } from './interfaces/bcrypt.service.interface';
+import { IbcryptService } from '../interfaces/bcrypt.service.interface';
 
 @Injectable()
 export class AuthService implements IAuthService {

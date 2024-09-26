@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthController } from './auth.controller';
-import { AuthService } from './auth.service';
+import { AuthService } from './services/auth.service';
 import { UserRepository } from '../user/user.repository';
-import { JwtService } from './jwt.service';
-import { RedisService } from './redis.service';
+import { JwtService } from './services/jwt.service';
+import { RedisService } from './services/redis.service';
 import { UserEntity } from '../user/user.entity';
 import { IAuthService } from './interfaces/auth.service.interface';
 import { IUserRepository } from '../user/interfaces/user.repository.interface';
@@ -14,7 +14,7 @@ import { JwtStrategy } from './jwt.strategy';
 import { IJwtStrategy } from './interfaces/jwt.strategy.interface';
 import { typeOrmConfig } from '../config/database.config';
 import { redisConfig } from '../config/redis.config';
-import { BcryptService } from './bcrypt.service';
+import { BcryptService } from './services/bcrypt.service';
 import { IbcryptService } from './interfaces/bcrypt.service.interface';
 
 @Module({
