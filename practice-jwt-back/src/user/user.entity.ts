@@ -1,19 +1,27 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {IsString} from "class-validator";
 
-@Entity('users') // 'users'라는 테이블과 매핑
+@Entity('users')
 export class UserEntity {
-  @PrimaryGeneratedColumn('uuid') // id는 자동 생성, UUID 형식
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ unique: true }) // 이메일은 고유한 값으로 설정
+
+  @Column({ unique: true })
+  @IsString({
+    message: 'email은 String 타입을 입력해줘야 합니다.'
+  })
   email: string;
 
-  @Column() // 비밀번호는 일반 텍스트로 저장하지 않고, 해시된 값을 저장
+  @Column()
+  @IsString({
+    message: 'password는 String 타입을 입력해줘야 합니다.'
+  })
   password: string;
 
-  @CreateDateColumn() // 생성 시 자동으로 날짜 저장
+  @CreateDateColumn()
   createdAt: Date;
 
-  @UpdateDateColumn() // 업데이트 시 자동으로 날짜 업데이트
+  @UpdateDateColumn()
   updatedAt: Date;
 }
