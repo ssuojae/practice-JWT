@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
-import {IsString} from "class-validator";
+import { IsString, IsNotEmpty } from 'class-validator';
 
 @Entity('users')
 export class UserEntity {
@@ -9,13 +9,19 @@ export class UserEntity {
 
   @Column({ unique: true })
   @IsString({
-    message: 'email은 String 타입을 입력해줘야 합니다.'
+    message: 'email은 String 타입을 입력해줘야 합니다.',
+  })
+  @IsNotEmpty({
+    message: 'email은 비어있으면 안 됩니다.',
   })
   email: string;
 
   @Column()
   @IsString({
-    message: 'password는 String 타입을 입력해줘야 합니다.'
+    message: 'password는 String 타입을 입력해줘야 합니다.',
+  })
+  @IsNotEmpty({
+    message: 'password는 비어있으면 안 됩니다.',
   })
   password: string;
 
