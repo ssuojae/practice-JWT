@@ -1,5 +1,8 @@
 # JSON Web Token 프로젝트 
 
+<img width="487" alt="image" src="https://github.com/user-attachments/assets/d521b8fa-e46e-4748-a1a5-efc731d5332d">
+
+<br/>
 <br/>
 
 ## 백엔드 - Node.js
