@@ -52,14 +52,14 @@
 
 #### 로그인 플로우
 
-<img src="https://github.com/user-attachments/assets/efb64976-0d84-4ec6-ae8c-fdef36f05325" width="700">
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/ebab636f-4f2a-4bb9-b79d-0e6a1cd6910d">
 
 
 <br/>
 
 #### 토큰 갱신 플로우 
 
-<img src="https://github.com/user-attachments/assets/aebe8fe7-64d1-4405-9a27-b18146285b3d" width="700">
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/dc1c1bd3-101d-4287-9ae5-044c9a0f2d64">
 
 <br/>
 <br/>
