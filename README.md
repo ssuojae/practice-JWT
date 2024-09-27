@@ -1,3 +1,4 @@
+# JSON Web Token 프로젝트 
 
 <br/>
 
@@ -38,7 +39,27 @@
 ## 프론트 - Flutter
 
 ### 구조 설계
+
+<img src="https://github.com/user-attachments/assets/7b1e23dd-25a3-46f7-aa4a-ccfe30ca386a" width="700">
+
 ### 시퀀스 다이어그램
+
+#### 회원가입 플로우
+
+<img src="https://github.com/user-attachments/assets/c38d20fc-1acd-49c5-bf23-dcd0c46e1823" width="700">
+
+<br/>
+
+#### 로그인 플로우
+
+<img src="https://github.com/user-attachments/assets/efb64976-0d84-4ec6-ae8c-fdef36f05325" width="700">
+
+
+<br/>
+
+#### 토큰 갱신 플로우 
+
+<img src="https://github.com/user-attachments/assets/aebe8fe7-64d1-4405-9a27-b18146285b3d" width="700">
 
 <br/>
 <br/>
