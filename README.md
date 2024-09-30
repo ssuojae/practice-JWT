@@ -99,4 +99,5 @@
 
 ### 프론트엔드
 
-- []()
+- [Flutter에서 DAO는 freezed를 사용하지 않고 DTO에서 freezed를 사용한 이유 (feat. mutable, immutable)](https://github.com/ssuojae/practice-JWT/blob/main/study/flutter_study01.md)
+
