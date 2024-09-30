@@ -111,8 +111,7 @@ class __$$UserDTOImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable()
 class _$UserDTOImpl implements _UserDTO {
   const _$UserDTOImpl({required this.email, required this.password});
 
