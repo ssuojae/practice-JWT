@@ -1,10 +1,10 @@
 import 'package:portfolio/data/dao/user_dao.dart';
 import 'package:portfolio/data/local_data_source/secure_token_service.dart';
 
-final class UserLocalDataSource {
+final class LocalDataSource {
   final SecureTokenService _secureTokenService;
 
-  UserLocalDataSource(this._secureTokenService);
+  LocalDataSource(this._secureTokenService);
 
   // 유저 정보를 로컬 저장소에 저장하는 메서드
   Future<void> saveUserOnfo(UserDAO userDAO) async {
