@@ -7,40 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43443BE62C9C06D300354931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443BE52C9C06D300354931 /* AppDelegate.swift */; };
-		43443BE82C9C06D300354931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443BE72C9C06D300354931 /* SceneDelegate.swift */; };
-		43443BEA2C9C06D300354931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443BE92C9C06D300354931 /* ViewController.swift */; };
-		43443BED2C9C06D300354931 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 43443BEC2C9C06D300354931 /* Base */; };
-		43443BEF2C9C06D300354931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43443BEE2C9C06D300354931 /* Assets.xcassets */; };
-		43443BF22C9C06D300354931 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 43443BF12C9C06D300354931 /* Base */; };
 		43443BFD2C9C06D300354931 /* practcie_jwt_front_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443BFC2C9C06D300354931 /* practcie_jwt_front_iosTests.swift */; };
 		43443C072C9C06D300354931 /* practcie_jwt_front_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443C062C9C06D300354931 /* practcie_jwt_front_iosUITests.swift */; };
 		43443C092C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443C082C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		43443BF92C9C06D300354931 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 43443BDA2C9C06D300354931 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43443BE12C9C06D300354931;
-			remoteInfo = "practcie-jwt-front-ios";
-		};
-		43443C032C9C06D300354931 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 43443BDA2C9C06D300354931 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43443BE12C9C06D300354931;
-			remoteInfo = "practcie-jwt-front-ios";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		43443BE22C9C06D300354931 /* practcie-jwt-front-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practcie-jwt-front-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43443BE52C9C06D300354931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43443BE72C9C06D300354931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43443BE92C9C06D300354931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43443BEC2C9C06D300354931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43443BEE2C9C06D300354931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43443BF12C9C06D300354931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43443BF32C9C06D300354931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,13 +27,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43443BDF2C9C06D300354931 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43443BF52C9C06D300354931 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,6 +44,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4319614E2CABDC2D00F9544A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4319614F2CABDC5E00F9544A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		431961502CABDC6000F9544A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		43443BD92C9C06D300354931 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +78,6 @@
 		43443BE32C9C06D300354931 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43443BE22C9C06D300354931 /* practcie-jwt-front-ios.app */,
 				43443BF82C9C06D300354931 /* practcie-jwt-front-iosTests.xctest */,
 				43443C022C9C06D300354931 /* practcie-jwt-front-iosUITests.xctest */,
 			);
@@ -99,10 +87,12 @@
 		43443BE42C9C06D300354931 /* practcie-jwt-front-ios */ = {
 			isa = PBXGroup;
 			children = (
+				431961502CABDC6000F9544A /* Presentation */,
+				4319614F2CABDC5E00F9544A /* Data */,
+				4319614E2CABDC2D00F9544A /* Domain */,
 				43443BE52C9C06D300354931 /* AppDelegate.swift */,
 				43443BE72C9C06D300354931 /* SceneDelegate.swift */,
 				43443BE92C9C06D300354931 /* ViewController.swift */,
-				43443BEB2C9C06D300354931 /* Main.storyboard */,
 				43443BEE2C9C06D300354931 /* Assets.xcassets */,
 				43443BF02C9C06D300354931 /* LaunchScreen.storyboard */,
 				43443BF32C9C06D300354931 /* Info.plist */,
@@ -130,23 +120,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43443BE12C9C06D300354931 /* practcie-jwt-front-ios */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43443C0C2C9C06D300354931 /* Build configuration list for PBXNativeTarget "practcie-jwt-front-ios" */;
-			buildPhases = (
-				43443BDE2C9C06D300354931 /* Sources */,
-				43443BDF2C9C06D300354931 /* Frameworks */,
-				43443BE02C9C06D300354931 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "practcie-jwt-front-ios";
-			productName = "practcie-jwt-front-ios";
-			productReference = 43443BE22C9C06D300354931 /* practcie-jwt-front-ios.app */;
-			productType = "com.apple.product-type.application";
-		};
 		43443BF72C9C06D300354931 /* practcie-jwt-front-iosTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43443C0F2C9C06D300354931 /* Build configuration list for PBXNativeTarget "practcie-jwt-front-iosTests" */;
@@ -158,7 +131,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				43443BFA2C9C06D300354931 /* PBXTargetDependency */,
 			);
 			name = "practcie-jwt-front-iosTests";
 			productName = "practcie-jwt-front-iosTests";
@@ -176,7 +148,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				43443C042C9C06D300354931 /* PBXTargetDependency */,
 			);
 			name = "practcie-jwt-front-iosUITests";
 			productName = "practcie-jwt-front-iosUITests";
@@ -193,9 +164,6 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					43443BE12C9C06D300354931 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					43443BF72C9C06D300354931 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 43443BE12C9C06D300354931;
@@ -215,11 +183,13 @@
 				Base,
 			);
 			mainGroup = 43443BD92C9C06D300354931;
+			packageReferences = (
+				431961512CABDCC000F9544A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 43443BE32C9C06D300354931 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43443BE12C9C06D300354931 /* practcie-jwt-front-ios */,
 				43443BF72C9C06D300354931 /* practcie-jwt-front-iosTests */,
 				43443C012C9C06D300354931 /* practcie-jwt-front-iosUITests */,
 			);
@@ -227,16 +197,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		43443BE02C9C06D300354931 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43443BEF2C9C06D300354931 /* Assets.xcassets in Resources */,
-				43443BF22C9C06D300354931 /* Base in Resources */,
-				43443BED2C9C06D300354931 /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43443BF62C9C06D300354931 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,16 +214,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43443BDE2C9C06D300354931 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43443BEA2C9C06D300354931 /* ViewController.swift in Sources */,
-				43443BE62C9C06D300354931 /* AppDelegate.swift in Sources */,
-				43443BE82C9C06D300354931 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43443BF42C9C06D300354931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,28 +233,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		43443BFA2C9C06D300354931 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43443BE12C9C06D300354931 /* practcie-jwt-front-ios */;
-			targetProxy = 43443BF92C9C06D300354931 /* PBXContainerItemProxy */;
-		};
-		43443C042C9C06D300354931 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43443BE12C9C06D300354931 /* practcie-jwt-front-ios */;
-			targetProxy = 43443C032C9C06D300354931 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		43443BEB2C9C06D300354931 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43443BEC2C9C06D300354931 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43443BF02C9C06D300354931 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,62 +364,6 @@
 			};
 			name = Release;
 		};
-		43443C0D2C9C06D300354931 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VGM28F2FH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "practcie-jwt-front-ios/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "suojae.practcie-jwt-front-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		43443C0E2C9C06D300354931 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VGM28F2FH7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "practcie-jwt-front-ios/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "suojae.practcie-jwt-front-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		43443C102C9C06D300354931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,15 +452,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43443C0C2C9C06D300354931 /* Build configuration list for PBXNativeTarget "practcie-jwt-front-ios" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43443C0D2C9C06D300354931 /* Debug */,
-				43443C0E2C9C06D300354931 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		43443C0F2C9C06D300354931 /* Build configuration list for PBXNativeTarget "practcie-jwt-front-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -607,6 +471,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		431961512CABDCC000F9544A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 43443BDA2C9C06D300354931 /* Project object */;
 }
