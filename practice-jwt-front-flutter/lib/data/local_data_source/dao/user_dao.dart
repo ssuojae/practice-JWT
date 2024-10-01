@@ -20,3 +20,4 @@ class UserDAO {
   // toJson 메서드 (직렬화)
   Map<String, dynamic> toJson() => _$UserDAOToJson(this);
 }
+

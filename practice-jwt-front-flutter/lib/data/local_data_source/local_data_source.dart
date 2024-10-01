@@ -1,5 +1,5 @@
-import 'package:portfolio/data/dao/user_dao.dart';
 import 'package:portfolio/data/local_data_source/secure_token_service.dart';
+import 'dao/user_dao.dart';
 
 final class LocalDataSource {
   final SecureTokenService _secureTokenService;

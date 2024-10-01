@@ -1,6 +1,6 @@
-import '../dto/user_dto.dart';
 import '../../domain/user_entity.dart';
-import '../dao/user_dao.dart';
+import '../local_data_source/dao/user_dao.dart';
+import '../remote_data_source/dto/user_dto.dart';
 
 final class UserMapper {
 
