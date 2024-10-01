@@ -4,10 +4,12 @@ part 'user_dao.g.dart';
 
 @JsonSerializable()
 class UserDAO {
+  String uuid;
   String email;
   String password;
 
   UserDAO({
+    required this.uuid,
     required this.email,
     required this.password,
   });

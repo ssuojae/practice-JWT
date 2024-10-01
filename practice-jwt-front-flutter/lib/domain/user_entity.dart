@@ -5,6 +5,7 @@ part 'user_entity.freezed.dart';
 @freezed
 class UserEntity with _$UserEntity {
   const factory UserEntity({
+    required String uuid,
     required String email,
     required String password,
   }) = _UserEntity;

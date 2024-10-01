@@ -6,6 +6,7 @@ part 'user_dto.g.dart';
 @freezed
 class UserDTO with _$UserDTO {
   const factory UserDTO({
+    required String uuid,
     required String email,
     required String password,
   }) = _UserDTO;

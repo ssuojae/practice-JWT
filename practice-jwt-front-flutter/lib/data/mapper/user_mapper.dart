@@ -7,6 +7,7 @@ final class UserMapper {
   // DTO -> Entity
   static UserEntity toEntityFromDTO(UserDTO dto) {
     return UserEntity(
+      uuid: dto.uuid,
       email: dto.email,
       password: dto.password,
     );
@@ -15,6 +16,7 @@ final class UserMapper {
   // Entity -> DTO
   static UserDTO toDTOFromEntity(UserEntity entity) {
     return UserDTO(
+        uuid: entity.uuid,
         email: entity.email,
         password: entity.password,
     );
@@ -23,6 +25,7 @@ final class UserMapper {
   // DAO -> Entity
   static UserEntity toEntityFromDAO(UserDAO dao) {
     return UserEntity(
+      uuid: dao.uuid,
       email: dao.email,
       password: dao.password,
     );
@@ -31,6 +34,7 @@ final class UserMapper {
   // Entity -> DAO
   static UserDAO toDAOFromEntity(UserEntity entity) {
     return UserDAO(
+      uuid: entity.uuid,
       email: entity.email,
       password: entity.password,
     );

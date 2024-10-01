@@ -20,6 +20,7 @@ UserDTO _$UserDTOFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$UserDTO {
+  String get uuid => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
 
@@ -37,7 +38,7 @@ abstract class $UserDTOCopyWith<$Res> {
   factory $UserDTOCopyWith(UserDTO value, $Res Function(UserDTO) then) =
       _$UserDTOCopyWithImpl<$Res, UserDTO>;
   @useResult
-  $Res call({String email, String password});
+  $Res call({String uuid, String email, String password});
 }
 
 /// @nodoc
@@ -55,10 +56,15 @@ class _$UserDTOCopyWithImpl<$Res, $Val extends UserDTO>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? uuid = null,
     Object? email = null,
     Object? password = null,
   }) {
     return _then(_value.copyWith(
+      uuid: null == uuid
+          ? _value.uuid
+          : uuid // ignore: cast_nullable_to_non_nullable
+              as String,
       email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -78,7 +84,7 @@ abstract class _$$UserDTOImplCopyWith<$Res> implements $UserDTOCopyWith<$Res> {
       __$$UserDTOImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String email, String password});
+  $Res call({String uuid, String email, String password});
 }
 
 /// @nodoc
@@ -94,10 +100,15 @@ class __$$UserDTOImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? uuid = null,
     Object? email = null,
     Object? password = null,
   }) {
     return _then(_$UserDTOImpl(
+      uuid: null == uuid
+          ? _value.uuid
+          : uuid // ignore: cast_nullable_to_non_nullable
+              as String,
       email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -113,11 +124,14 @@ class __$$UserDTOImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$UserDTOImpl implements _UserDTO {
-  const _$UserDTOImpl({required this.email, required this.password});
+  const _$UserDTOImpl(
+      {required this.uuid, required this.email, required this.password});
 
   factory _$UserDTOImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserDTOImplFromJson(json);
 
+  @override
+  final String uuid;
   @override
   final String email;
   @override
@@ -125,7 +139,7 @@ class _$UserDTOImpl implements _UserDTO {
 
   @override
   String toString() {
-    return 'UserDTO(email: $email, password: $password)';
+    return 'UserDTO(uuid: $uuid, email: $email, password: $password)';
   }
 
   @override
@@ -133,6 +147,7 @@ class _$UserDTOImpl implements _UserDTO {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$UserDTOImpl &&
+            (identical(other.uuid, uuid) || other.uuid == uuid) &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.password, password) ||
                 other.password == password));
@@ -140,7 +155,7 @@ class _$UserDTOImpl implements _UserDTO {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, email, password);
+  int get hashCode => Object.hash(runtimeType, uuid, email, password);
 
   /// Create a copy of UserDTO
   /// with the given fields replaced by the non-null parameter values.
@@ -160,11 +175,14 @@ class _$UserDTOImpl implements _UserDTO {
 
 abstract class _UserDTO implements UserDTO {
   const factory _UserDTO(
-      {required final String email,
+      {required final String uuid,
+      required final String email,
       required final String password}) = _$UserDTOImpl;
 
   factory _UserDTO.fromJson(Map<String, dynamic> json) = _$UserDTOImpl.fromJson;
 
+  @override
+  String get uuid;
   @override
   String get email;
   @override
