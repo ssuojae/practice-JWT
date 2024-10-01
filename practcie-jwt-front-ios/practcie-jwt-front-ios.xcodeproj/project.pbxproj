@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		43443BFD2C9C06D300354931 /* practcie_jwt_front_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443BFC2C9C06D300354931 /* practcie_jwt_front_iosTests.swift */; };
-		43443C072C9C06D300354931 /* practcie_jwt_front_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443C062C9C06D300354931 /* practcie_jwt_front_iosUITests.swift */; };
-		43443C092C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43443C082C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +20,6 @@
 		43443BF82C9C06D300354931 /* practcie-jwt-front-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practcie-jwt-front-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43443BFC2C9C06D300354931 /* practcie_jwt_front_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practcie_jwt_front_iosTests.swift; sourceTree = "<group>"; };
 		43443C022C9C06D300354931 /* practcie-jwt-front-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practcie-jwt-front-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43443C062C9C06D300354931 /* practcie_jwt_front_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practcie_jwt_front_iosUITests.swift; sourceTree = "<group>"; };
-		43443C082C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practcie_jwt_front_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +57,7 @@
 		431961502CABDC6000F9544A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				43443BE92C9C06D300354931 /* ViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -70,7 +67,6 @@
 			children = (
 				43443BE42C9C06D300354931 /* practcie-jwt-front-ios */,
 				43443BFB2C9C06D300354931 /* practcie-jwt-front-iosTests */,
-				43443C052C9C06D300354931 /* practcie-jwt-front-iosUITests */,
 				43443BE32C9C06D300354931 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,7 +88,6 @@
 				4319614E2CABDC2D00F9544A /* Domain */,
 				43443BE52C9C06D300354931 /* AppDelegate.swift */,
 				43443BE72C9C06D300354931 /* SceneDelegate.swift */,
-				43443BE92C9C06D300354931 /* ViewController.swift */,
 				43443BEE2C9C06D300354931 /* Assets.xcassets */,
 				43443BF02C9C06D300354931 /* LaunchScreen.storyboard */,
 				43443BF32C9C06D300354931 /* Info.plist */,
@@ -106,15 +101,6 @@
 				43443BFC2C9C06D300354931 /* practcie_jwt_front_iosTests.swift */,
 			);
 			path = "practcie-jwt-front-iosTests";
-			sourceTree = "<group>";
-		};
-		43443C052C9C06D300354931 /* practcie-jwt-front-iosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				43443C062C9C06D300354931 /* practcie_jwt_front_iosUITests.swift */,
-				43443C082C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift */,
-			);
-			path = "practcie-jwt-front-iosUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43443C072C9C06D300354931 /* practcie_jwt_front_iosUITests.swift in Sources */,
-				43443C092C9C06D300354931 /* practcie_jwt_front_iosUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
