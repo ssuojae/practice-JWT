@@ -12,6 +12,11 @@ dependencies:
 
   #Core
   flutter_bloc: ^8.1.6
+  get_it: ^8.0.0
+
+  #Network
+  dio: ^5.7.0
+  jwt_decoder: ^2.0.1
 
   #Freezed
   freezed: ^2.5.7
@@ -29,8 +34,7 @@ dependencies:
 
   #Utils
   build_runner: ^2.4.12
-  jwt_decoder: ^2.0.1
-  dio: ^5.7.0
+  logger: ^2.4.0
 
 dev_dependencies:
   flutter_test:
