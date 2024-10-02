@@ -18,6 +18,9 @@
 		431961B72CABE09B00F9544A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431961B62CABE09B00F9544A /* UserEntity.swift */; };
 		43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */; };
 		43CE69F92CAD26CF00813425 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69F82CAD26CF00813425 /* TokenManager.swift */; };
+		43CE69FB2CAD32FF00813425 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69FA2CAD32FF00813425 /* APIEndpoint.swift */; };
+		43CE69FD2CAD33DE00813425 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69FC2CAD33DE00813425 /* NetworkService.swift */; };
+		43CE6A002CAD358700813425 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43CE69FF2CAD358700813425 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,8 @@
 		431961B62CABE09B00F9544A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		43CE69F82CAD26CF00813425 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		43CE69FA2CAD32FF00813425 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		43CE69FC2CAD33DE00813425 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431961B22CABE02E00F9544A /* RxRelay in Frameworks */,
+				43CE6A002CAD358700813425 /* Alamofire in Frameworks */,
 				431961B02CABE02E00F9544A /* RxCocoa in Frameworks */,
 				431961AE2CABE02E00F9544A /* RxBlocking in Frameworks */,
 			);
@@ -85,6 +91,8 @@
 				431961B82CABE1C100F9544A /* DTO */,
 				43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */,
 				43CE69F82CAD26CF00813425 /* TokenManager.swift */,
+				43CE69FA2CAD32FF00813425 /* APIEndpoint.swift */,
+				43CE69FC2CAD33DE00813425 /* NetworkService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 				431961AD2CABE02E00F9544A /* RxBlocking */,
 				431961AF2CABE02E00F9544A /* RxCocoa */,
 				431961B12CABE02E00F9544A /* RxRelay */,
+				43CE69FF2CAD358700813425 /* Alamofire */,
 			);
 			productName = "practice-jwt-front-ios";
 			productReference = 431961952CABDFD200F9544A /* practice-jwt-front-ios.app */;
@@ -170,6 +179,7 @@
 			mainGroup = 4319618C2CABDFD200F9544A;
 			packageReferences = (
 				431961AC2CABE02E00F9544A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				43CE69FE2CAD358700813425 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 431961962CABDFD200F9544A /* Products */;
 			projectDirPath = "";
@@ -197,7 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CE69FB2CAD32FF00813425 /* APIEndpoint.swift in Sources */,
 				4319619D2CABDFD200F9544A /* ViewController.swift in Sources */,
+				43CE69FD2CAD33DE00813425 /* NetworkService.swift in Sources */,
 				43CE69F92CAD26CF00813425 /* TokenManager.swift in Sources */,
 				431961992CABDFD200F9544A /* AppDelegate.swift in Sources */,
 				43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */,
@@ -425,6 +437,14 @@
 				minimumVersion = 6.7.1;
 			};
 		};
+		43CE69FE2CAD358700813425 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -442,6 +462,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 431961AC2CABE02E00F9544A /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		43CE69FF2CAD358700813425 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43CE69FE2CAD358700813425 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
