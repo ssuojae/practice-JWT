@@ -1,6 +1,6 @@
 # JSON Web Token 프로젝트 
 
-<img src="https://github.com/user-attachments/assets/d563ee90-c811-4229-9281-ad9147e600cf" width="500">
+<img src="https://github.com/user-attachments/assets/ae73db44-dad4-49d4-a0d8-76a0fee1392e" width="500">
 
 <br/>
 <br/>
