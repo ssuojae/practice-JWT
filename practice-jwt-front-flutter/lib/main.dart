@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'dependency_injector.dart';  // 의존성 관리 객체 import
+import 'package:portfolio/presentation/sign_up_scene/page/sign_up_page.dart';
+import 'dependency_injector.dart';
 import 'package:portfolio/presentation/login_scene/page/login_page.dart';
 
 void main() {
-  DependencyInjector.setup();  // 의존성 주입 설정
+  DependencyInjector.setup();
 
   runApp(const MyApp());
 }
@@ -17,7 +18,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/signup': (context) => const SignUpPage(),
+      },
     );
   }
+
 }
