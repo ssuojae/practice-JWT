@@ -72,7 +72,7 @@
 
 ### 구조 설계 (MVVM-C, Clean Architecture)
 
-![image](https://github.com/user-attachments/assets/fab0e035-ffc3-45b4-8bb8-912489d20562)
+![image](https://github.com/user-attachments/assets/67e9fb83-8664-485f-9e62-858122beae27)
 
 
 ### 시퀀스 다이어그램
