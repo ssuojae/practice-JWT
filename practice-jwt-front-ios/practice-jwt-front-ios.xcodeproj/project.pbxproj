@@ -16,6 +16,7 @@
 		431961B02CABE02E00F9544A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 431961AF2CABE02E00F9544A /* RxCocoa */; };
 		431961B22CABE02E00F9544A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 431961B12CABE02E00F9544A /* RxRelay */; };
 		431961B72CABE09B00F9544A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431961B62CABE09B00F9544A /* UserEntity.swift */; };
+		43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		431961A42CABDFD200F9544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431961A62CABDFD200F9544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431961B62CABE09B00F9544A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,9 @@
 		431961B32CABE07600F9544A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				431961BA2CABE1CA00F9544A /* Network */,
 				431961B92CABE1C300F9544A /* Repository */,
 				431961B82CABE1C100F9544A /* DTO */,
+				43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -112,13 +114,6 @@
 			children = (
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		431961BA2CABE1CA00F9544A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +196,7 @@
 			files = (
 				4319619D2CABDFD200F9544A /* ViewController.swift in Sources */,
 				431961992CABDFD200F9544A /* AppDelegate.swift in Sources */,
+				43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */,
 				4319619B2CABDFD200F9544A /* SceneDelegate.swift in Sources */,
 				431961B72CABE09B00F9544A /* UserEntity.swift in Sources */,
 			);
