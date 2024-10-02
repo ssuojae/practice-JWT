@@ -71,6 +71,9 @@
 ## 프론트 - iOS
 
 ### 구조 설계
+
+<img width="1248" alt="image" src="https://github.com/user-attachments/assets/6d2b6fc5-48e1-44bb-8df1-8854027bfc79">
+
 ### 시퀀스 다이어그램
 
 
