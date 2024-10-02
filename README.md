@@ -106,4 +106,5 @@
 - [Flutter에서 DAO는 freezed를 사용하지 않고 DTO에서 freezed를 사용한 이유 (feat. mutable, immutable)](https://github.com/ssuojae/practice-JWT/blob/main/study/flutter_study01.md)
 - [프론트와 백엔드 간 유저 정보 관리 전략](https://github.com/ssuojae/practice-JWT/blob/main/study/flutter_study02.md)
 - [static 메서드 사용을 지양해야하는 이유 (feat. Effective Dart)](https://github.com/ssuojae/practice-JWT/blob/main/study/flutter_study03.md)
+- [JWT토큰 관리에 있어서 Keychain을 사용한 이유](https://github.com/ssuojae/practice-JWT/blob/main/study/ios_study01.md)
 
