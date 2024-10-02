@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:get_it/get_it.dart';
 import '../bloc/login_bloc.dart';
 import '../events/login_event.dart';
 import '../states/login_state.dart';
@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => LoginBloc(context.read()),
+      create: (context) => GetIt.instance<LoginBloc>(),
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Login'),
@@ -34,7 +34,6 @@ class LoginPage extends StatelessWidget {
               if (state is LoginLoading) {
                 return const Center(child: CircularProgressIndicator());
               }
-
               return _buildLoginForm(context);
             },
           ),
