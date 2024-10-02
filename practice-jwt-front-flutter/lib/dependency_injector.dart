@@ -8,6 +8,7 @@ import 'package:portfolio/data/mapper/user_mapper.dart';
 import 'package:portfolio/data/repositories/user_repository_imp.dart';
 import 'package:portfolio/domain/repository_interfaces/user_repository.dart';
 import 'package:portfolio/presentation/login_scene/bloc/login_bloc.dart';
+import 'package:portfolio/presentation/sign_up_scene/bloc/sign_up_bloc.dart';
 
 class DependencyInjector {
   static final getIt = GetIt.instance;
@@ -38,5 +39,7 @@ class DependencyInjector {
 
     // Bloc 등록
     getIt.registerFactory<LoginBloc>(() => LoginBloc(getIt<IUserRepository>()));
+    getIt.registerFactory<SignUpBloc>(()=> SignUpBloc(getIt<IUserRepository>()));
+
   }
 }
