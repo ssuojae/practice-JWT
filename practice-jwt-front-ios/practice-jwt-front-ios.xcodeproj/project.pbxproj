@@ -17,6 +17,7 @@
 		431961B22CABE02E00F9544A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 431961B12CABE02E00F9544A /* RxRelay */; };
 		431961B72CABE09B00F9544A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431961B62CABE09B00F9544A /* UserEntity.swift */; };
 		43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */; };
+		43CE69F92CAD26CF00813425 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE69F82CAD26CF00813425 /* TokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		431961A62CABDFD200F9544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431961B62CABE09B00F9544A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		43CE69F82CAD26CF00813425 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				431961B92CABE1C300F9544A /* Repository */,
 				431961B82CABE1C100F9544A /* DTO */,
 				43CE69F62CAD1CFA00813425 /* KeychainStorage.swift */,
+				43CE69F82CAD26CF00813425 /* TokenManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4319619D2CABDFD200F9544A /* ViewController.swift in Sources */,
+				43CE69F92CAD26CF00813425 /* TokenManager.swift in Sources */,
 				431961992CABDFD200F9544A /* AppDelegate.swift in Sources */,
 				43CE69F72CAD1CFA00813425 /* KeychainStorage.swift in Sources */,
 				4319619B2CABDFD200F9544A /* SceneDelegate.swift in Sources */,
