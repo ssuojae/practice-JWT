@@ -1,4 +1,4 @@
-## Keychain에 대한 설명
+## JWT토큰 관리에 있어서 Keychain을 사용한 이유
 
 <br/>
 
