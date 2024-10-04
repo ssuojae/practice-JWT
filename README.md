@@ -72,7 +72,7 @@
 
 ### 구조 설계
 
-![image](https://github.com/user-attachments/assets/67e9fb83-8664-485f-9e62-858122beae27)
+![image](https://github.com/user-attachments/assets/146e8caf-3dcf-4149-9f7d-48fc4d98be49)
 
 
 <br/>
