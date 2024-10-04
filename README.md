@@ -70,12 +70,9 @@
 
 ## 프론트 - iOS
 
-### 구조 설계 (MVVM-C, Clean Architecture)
+### 구조 설계
 
 ![image](https://github.com/user-attachments/assets/67e9fb83-8664-485f-9e62-858122beae27)
-
-
-### 시퀀스 다이어그램
 
 
 <br/>
