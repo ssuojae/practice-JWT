@@ -62,7 +62,7 @@
 
 #### 토큰 갱신 플로우 
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/dc1c1bd3-101d-4287-9ae5-044c9a0f2d64">
+<img src="https://github.com/user-attachments/assets/a2829699-3485-4274-b614-cd3bc5155106" width="700">
 
 <br/>
 <br/>
